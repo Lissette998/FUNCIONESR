@@ -137,36 +137,3 @@ av08
 
 # Ejercicio 3 
 
-OFtotales <- 0
-rechazados <- 0
-aprobados <- 0
-
-for (x in ListaDocumentos){
-  
-  if (x[1] == "of" ){
-    OFtotales <- OFtotales + 1
-    
-    if(x[3] == "meca" ||x[3] == "arme"||x[3] == "ampr"){
-      
-      print(paste(x[2], "se encuentra rechazado"))
-      aprobados <- aprobados + 1
-      
-    } else {
-      
-      print(paste(x[2], "se encuentra aprobado"))
-      rechazados <- rechazados + 1
-    }
-  }
-}
-
-print(paste("Tenemos:", OFtotales, "De los oficios se encuentran,", aprobados, "Que se encuentran aprobados", rechazados, "Y se encuentran rechazados"))
-
-
-
-
-
-
-
-
-
-
