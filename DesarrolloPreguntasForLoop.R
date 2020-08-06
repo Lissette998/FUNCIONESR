@@ -54,39 +54,6 @@ MPresultado<-  function(ListaDocumentos){
 
 MPresultado(ListaDocumentos)
 
-# Sin utilizar función 
-
-for (x in ListaDocumentos){
-  if (x[1] == "MP"){
-    MPtotal <- MPtotal + 1
-    
-   MPtotalniños <- MPtotalniños + (length(x)-1)
-    
-    if((length(x)-1)==3){
-      
-      mp3<-0
-      mp3<-mp3+1
-      print(paste("tenemos:", mp3, "lista de MP de 3 niños"))
-      
-    } else if((length(x)-1)==2){
-      
-      mp2<-0
-      mp2<-(mp2+1)
-      print(paste("tenemos:", mp2, "lista de mp de 2 niños"))
-      
-    } else {
-      
-      mp1<-0
-      mp1<-mp1+1
-      print(paste("tenemos:", mp1, "lista de MP de 1 niño"))
-    }
-    
-  }
-  
-}
-
-print(paste("Tenemos",MPtotal,"listas de mp en las cuales hay",MPtotalniños, "niños"))
-ListaDocumentos
 
 # Ejercicio 2 
 
